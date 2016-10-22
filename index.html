@@ -3,28 +3,38 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta content="pizzaria">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cadastroTipoLogin.css">
     <script src="js/index.js"></script>
     <title>La Bella</title>
     <link rel="icon" href="img/favicon.png">
+    
+    
+    
 </head>
 
 <body>
-
+<!-- header da pagina -->
 <div id="header">
     <ul id="menu">
 
-        <li id="login" class="login">
+        <li id="login" class="login" onclick="openNavLogin()">
             Login
         </li>
-        <li id="cadastro" class="login">
+        <li id="cadastro" class="login" onclick="openNavCadastro()">
             Cadastro
         </li>
         <li id="login" class="login">
-            <img src="img/carrinho.png"><span id="qtCarrinho">0</span>
+            <img src="img/carrinho.png"><span id="qtCarrinho">*</span>
         </li>
 
     </ul>
 </div>
+<!-- Botão Hamburguer Menu -->
+
+<span id="btMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<!-- menu lateral esquerdo -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#" target="_parent">Home</a>
@@ -32,14 +42,106 @@
   <a href="promocoes.html">Promoções</a>
   <a href="quem-somos.html">Quem Somos</a>
 </div>
-
-
-<span id="btMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-<div id="logo">
-           <img src="img/logofinal.png" width="100%" height="none">            
+<!-- login -->
+<div id="mySidenav2" class="sidenav2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavLogin()">&times;</a>
+  <a>Usuário</a>
+  <input class="inputLogin" type="text" placeholder="Seu e-mail">
+  
+  <a>Senha</a>
+  <input class="inputLogin" type="password" placeholder="senha"><br/><br/>
+  <button id="btEntrar">Entrar</button>
+  <a id="recuperarSenha">Recuperar senha</a>
 </div>
 
+<!-- Cadastro --> 
 
+<div id="mySidenav3" class="sidenav3">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavCadastro()">&times;</a>
+  <table id="tabelaCadastro">
+            <form action="underconstruction.html">
+
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                        <h1 ><a>Cadastro</a></h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <a>Nome:</a>
+                    </td>
+                    <td>
+                        <input type="text" size="50" maxlength="80" name="nome" id="nome" placeholder="Nome"/>
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>
+                    <a>Endereço:</a>
+                    </td>
+                    <td>
+                        <input type="text" size="50" maxlength="255" name="endereco" id="endereco" placeholder="Endereço"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    <a>telefone:</a>
+                    </td>
+                    <td>
+                        <input type="tel" size="10" maxlength="11" name="telefone" id="telefone" placeholder="21xxxxxxxxx"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <a>E-mail:</a>
+                    </td>
+                    <td>
+                        <input placeholder="email@email.com" type="email" size="50" maxlength="255" name="email" id="email" />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <a>Data de nascimento:</a>
+                    </td>
+                    <td>
+                        <input type="date" name="data" id="data" placeholder="01/01/1980" />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <a>Sua senha:</a>
+                    </td>
+                    <td>
+                    <input type="password" name:"senha" id="senha" maxlength="10"/>
+                    </td>                                        
+                </tr>
+                <tr>
+                    <td>
+                        <a>Deseja receber <br />e-mail? </a>
+                    </td>
+                    <td>
+                    <input type="checkbox" name:"queremail" id="queremail" checked="checked"/>
+                    </td>                                        
+                </tr>
+                <tr>
+                    <td colspan="2"><center>
+                        <br /> <br /> <br /> <br />
+                        <input type="reset" value="Limpa Formulário" />&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;
+                        <input type="submit" value="Enviar Formulário" />
+                    </td>                                        
+                </tr>
+</div>
+
+     <!-- Logo no centro da tela  -->
+                
+    <div id="logo">
+           <img src="img/logofinal.png" width="100%" height="none">            
+    </div>
+
+    <!-- rodapé da página -->
+    
      <footer id="footer">              
                 <ul id="ulRedes">
                     <!-- <li id="copy">&copy; Pizzaria Tartarugas Ninja 2016.</li>-->

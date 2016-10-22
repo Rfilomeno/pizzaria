@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>formulario</title>
+    </head>    
+    <body>
+		<table border="1" width="100%" height="100%">
+        	<form action="underconstruction.html">
+                
+            	<tr>
+                	<td colspan="2" style="text-align:center">
+                    	<h1>Formulário em HTML</h1>
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    Nome:
+                    </td>
+                    <td>
+                    	<input type="text" size="50" maxlength="80" name="nome" id="nome" placeholder="Nome"/>
+                    </td>                    
+                </tr>
+                <tr>
+                	<td>
+                    Endereço:
+                    </td>
+                    <td>
+                    	<input type="text" size="50" maxlength="255" name="endereco" id="endereco" placeholder="Endereço"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                	<td>
+                    telefone:
+                    </td>
+                    <td>
+                    	<input type="tel" size="10" maxlength="11" name="telefone" id="telefone" placeholder="21xxxxxxxxx"/>
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    E-mail:
+                    </td>
+                    <td>
+                    	<input placeholder="email@email.com" type="email" size="50" maxlength="255" name="email" id="email" />
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    sexo:
+                    </td>
+                    <td>
+                    	<select name="sexo" id="sexo" >
+                        	<option value="">Selecione o sexo</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>    
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    Entre com notas:
+                    </td>
+                    <td>
+                    	1ª<input type="number" size="4" maxlength="4" name="nota1" id="nota1" />/
+                        2ª<input type="number" size="4" maxlength="4" name="nota2" id="nota2" /><br/>	 
+                        3ª<input type="number" size="4" maxlength="4" name="nota3" id="nota3" />/ 
+                        4ª<input type="number" size="4" maxlength="4" name="nota4" id="nota4" />
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    data de nascimento:
+                    </td>
+                    <td>
+                    	<input type="date" name="data" id="data" placeholder="01/01/1980" />
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    Cor preferida:
+                    </td>
+                    <td>
+                    <input type="color"/>
+                    </td>                    
+                </tr>
+                <tr>
+                	<td>
+                    Informações:
+                    </td>
+                    <td>
+                    <textarea rows="10" cols="50" maxlength="255" name="informacoes" id="informacoes">
+"Digite aqui as informações que achar necessárias"
+                    </textarea>
+                  
+                    </td>                    
+                </tr>
+                <tr>
+                	<td>
+                    Selecione o mês do ano:
+                    </td>
+                    <td>
+                    	<input type="radio" name="mes" id="mes" value="1" />Janeiro &nbsp;&nbsp;
+                  	   	<input type="radio" name="mes" id="mes" value="2" />Fevereiro &nbsp;&nbsp;
+                     	<input type="radio" name="mes" id="mes" value="3" />Março &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    	<input type="radio" name="mes" id="mes" value="4" />Abril<br/>
+                    	<input type="radio" name="mes" id="mes" value="5" />Maio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    	<input type="radio" name="mes" id="mes" value="6" />Junho &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    	<input type="radio" name="mes" id="mes" value="7" />Julho &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;
+                    	<input type="radio" name="mes" id="mes" value="8" />Agosto <br/>
+                    	<input type="radio" name="mes" id="mes" value="9" />Setembro
+                    	<input type="radio" name="mes" id="mes" value="10" />Outubro &nbsp;&nbsp;
+                    	<input type="radio" name="mes" id="mes" value="11" />Novembro &nbsp;
+                    	<input type="radio" name="mes" id="mes" value="12" />Dezembro 
+                  
+                    </td>                    
+                </tr>
+                <tr>
+                	<td width="50" height="50">
+                    </td>                                        
+                </tr>
+                <tr>
+                	<td>
+                    Sua senha:
+                    </td>
+                    <td>
+                    <input type="password" name:"senha" id="senha" maxlength="10"/>
+                    </td>                                        
+                </tr>
+                <tr>
+                	<td>
+                    Deseja<br/>receber<br/> e-mail?
+                    </td>
+                    <td>
+                    <input type="checkbox" name:"queremail" id="queremail" checked="checked"/>
+                    </td>                                        
+                </tr>
+                <tr>
+                	<td>
+                    Campo<br/>
+                    Hidden
+                    </td>
+                    <td>
+                    <input type="hidden" name:"hidden" id="hidden"/>
+                    </td>                                        
+                </tr>
+                <tr>
+                	<td colspan="2"><center>
+                    	<input type="button" value="Botão" name="botao" id="botao" />&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;<input type="reset" value="Limpa Formulário" />&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;<input type="submit" value="enviar Form" />
+                    </td>                                        
+                </tr>            
+    </body>
+</html>

@@ -3,7 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta content="pizzaria">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/cardapio.css">
+    <link rel="stylesheet" href="css/quem-somos.css">
+    <link rel="stylesheet" href="css/login.css">
     <script src="js/index.js"></script>
     <title>La Bella</title>
     <link rel="icon" href="img/favicon.png">
@@ -14,7 +15,7 @@
 <div id="header">
     <ul id="menu">
 
-        <li id="login" class="login">
+        <li id="login" class="login" onclick="openNavLogin()">
             Login
         </li>
         <li id="cadastro" class="login">
@@ -33,6 +34,16 @@
   <a href="promocoes.html">Promoções</a>
   <a href="#">Quem Somos</a>
 </div>
+<div id="mySidenav2" class="sidenav2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavLogin()">&times;</a>
+  <a>Usuário</a>
+  <input class="inputLogin" type="text" placeholder="Seu e-mail">
+  
+  <a>Senha</a>
+  <input class="inputLogin" type="password" placeholder="senha"><br/><br/>
+  <button id="btEntrar">Entrar</button>
+  <a id="recuperarSenha">Recuperar senha</a>
+</div>
 
 
 <span id="btMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
@@ -40,11 +51,27 @@
            <img src="img/logofinal.png" width="50%" height="none">            
 </div>
     
-    <div id="imgCardapio">
+    <div id="img">
         <img src="img/quem%20somos.png" width="50%" height="none" alt="">
     </div>
-    <div id="cardapio">
-        
+    <div id="quemSomos">
+        <h2 id="titulo">Um momento sobre nós</h2>
+       <span id="conteudo"><p>
+            A Pizzaria La Bella foi fundada em 1964, virando point nos anos 80, no auge do Baixo Tijuca, tornando-se sempre uma parada obrigatória para a boêmia carioca até o amanhecer do dia.
+        </p>
+        <p>
+            Depois do sucesso vieram as filiais da Barra e da Lapa. O público é formado por anônimos e famosos, personalidades do meio artístico são frequentadores assíduos das casas.
+        </p>
+        <p>
+          Tem badalação para todos os gostos, na varanda serve-se chope gelado com muita azaração e no salão interno refrigerado, um ambiente mais tranquilo para reunir os amigos ou a família.
+        </p>
+        <p>  
+          A tradicional pizza oferece uma massa especial, feita com leite e creme de leite e pode ser servida em tamanho grande ou em fatias no balcão. Os sabores mais pedidos são Portuguesa, Calabresa e Margherita.
+        </p>
+        <p>     
+            Além das pizzas, a dica é o chope gelado, claro ou escuro, acompanhado de petiscos como carne seca com cubos de aipim, bolinhos de bacalhau ou a tábua de queijos e frios acompanhada com vinhos importados de uma adega seleta.
+        </p>
+        </span>
     </div>
     
 

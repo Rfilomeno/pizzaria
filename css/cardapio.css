@@ -1,23 +1,195 @@
-#logo{
-    position: fixed;
-    z-index: 21;
-    top:1%;
-    left: 42%;
-}
-#imgCardapio{
-    position: fixed;
-    z-index: 2;
-    top:15%;
-    left: 9%;
+                #logo{
+            position: fixed;
+            z-index: 21;
+            top:1%;
+            left: 42%;
+        }
+                #imgCardapio{
+            position: fixed;
+            z-index: 2;
+            top:15%;
+            left: 9%;
+        }
+                    
+
+         
+         
+        .homePic {
+        text-align: center;
+        background-color: rgba(205, 191, 191, 1);
+        
+        }
+    
+             #botaoVoltar{
+         width: 60px;
+         height: 60px;
+         background-color:#000000 ;  
+         box-shadow: 0 0 0 0;
+         border: 0 none;
+         outline: 0;
+         opacity: 0.5;
+         position:absolute;
+        margin-top: 21.5%;
+        margin-left: 5%;
+                 z-index: 2;
+         
+    }
+
+            #botaoProximo{
+        width: 60px;
+        height: 60px;
+        background-color: #000000 ; 
+        box-shadow: 0 0 0 0; 
+        border: 0 none;
+        outline: 0;
+        position:absolute;
+        margin-top: 21.5%;
+        margin-left: 90%;
+		opacity: 0.5;
+        z-index: 2;
+         }
+         
+             #pizzaHomePic{
+                position:absolute;
+                width: 18.5%;
+             	height: none;
+                margin-top: 10%;
+                margin-left: 15%;
+                opacity: 999;
+             z-index: 2;
+         }
+		 		#pizza2{
+			position:absolute;
+                width: 18.5%;
+             	height: none;
+                margin-top: 10%;
+                margin-left: 40%;
+                opacity: 999;
+                    z-index: 2;
+		
+		}
+				#pizza3{
+			position:absolute;
+                width: 18.5%;
+             	height: none;
+                margin-top: 10%;
+                margin-left: 65%;
+                opacity: 999;
+                    z-index: 2;
+		
+		}
+    
+         #comprar1{
+            background: #f9a9a9;
+             width: 10%;
+             height: none;
+             font-size: 144%;
+             font-family: arial;    
+              margin-top: 38%;
+                margin-left: 21%;
+             position: absolute;
+			 color:#333;
+			 border-bottom-color:#CCC;
+			 border-radius: 14px;
+             z-index: 2;
+			 
+         }
+         #comprar2{
+            background: #f9a9a9;
+             width: 10%;
+             height: none;
+             font-size: 144%;
+             font-family: arial;    
+             margin-top: 38%;
+             margin-left: 46%;
+             position: absolute;
+			 color:#333;
+			 border-bottom-color:#CCC;
+			 border-radius: 14px;
+             z-index: 2;
+			 
+         } 
+            #comprar3{
+            background: #f9a9a9;
+            width: 10%;
+             height: none;
+             font-size: 144%;
+             font-family: arial;    
+             margin-top: 38%;
+             margin-left: 71%;
+             position: absolute;
+			 color:#333;
+			 border-bottom-color:#CCC;
+			 border-radius: 14px;
+                z-index: 2;
+                
+			 
+         }
+		 
+           #ulRedes{
+            top: -15px;
+        
+        }
+
+
+        #imgPizza{
+            z-index: 2;
+            position: relative;
+            opacity: 1;
 }
 #cardapio{
-    position: absolute;
-    z-index: 1;
-    background-color: beige;
-    opacity: 0.7;
-    top:15%;
-    left: 9%;
-    height: 70%;
-    width: 80%;
-    
+            position: absolute;
+            z-index: 1;
+            background-color: beige;
+            /*opacity: 0.7;*/
+            top:15%;
+            left: 9%;
+            height: 70%;
+            width: 80%;
+            
+
+        }
+@media screen and (max-width: 720px) {
+             #botaoVoltar{
+         width: 30px;
+         height: 30px;
+         background-color:#000000 ;  
+         box-shadow: 0 0 0 0;
+         border: 0 none;
+         outline: 0;
+         opacity: 0.5;
+         position:absolute;
+        margin-top: 21.5%;
+        margin-left: 5%;
+                 z-index: 2;
+         
+    }
+
+            #botaoProximo{
+        width: 30px;
+        height: 30px;
+        background-color: #000000 ; 
+        box-shadow: 0 0 0 0; 
+        border: 0 none;
+        outline: 0;
+        position:absolute;
+        margin-top: 21.5%;
+        margin-left: 90%;
+		opacity: 0.5;
+        z-index: 2;
+         }
+        
+    #imgVoltar{
+        width: 50%;
+        height: 50%;
+    }
+    #imgProximo{
+         width: 50%;
+        height: 50%;
+    }
 }
+		
+
+
+
+		
