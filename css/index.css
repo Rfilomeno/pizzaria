@@ -1,9 +1,13 @@
 /* atribuição de fonte padrão e imagem de background */
+
 body {
     font-family: "Lato", sans-serif;
     background-image: url(../img/pizza1080.jpg);
 }
+
+
 /* css do menu hamburger */
+
 .sidenav {
     height: 83.5%;
     width: 0;
@@ -11,7 +15,7 @@ body {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: #111 ;
+    background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -27,7 +31,8 @@ body {
     transition: 0.3s;
 }
 
-.sidenav a:hover, .offcanvas a:focus{
+.sidenav a:hover,
+.offcanvas a:focus {
     color: #f1f1f1;
 }
 
@@ -40,12 +45,18 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
+
 /* fim do css do menu */
 
-#footer{
+#footer {
     position: fixed;
     z-index: 1;
     background-color: black;
@@ -54,45 +65,50 @@ body {
     left: 0%;
     width: 100%;
     height: 6rem;
+    opacity: 0.7;
 }
-.redes{
+
+.redes {
     display: inline;
     float: right;
     margin: 1%;
-    
 }
 
-#ulRedes{
-    
+#ulRedes {
     position: absolute;
     width: 97%;
     bottom: 0%;
 }
-.login{
+
+.login {
     color: white;
     list-style-type: none;
     text-decoration: underline;
     float: right;
     margin-right: 2%;
 }
-#qtCarrinho{
+
+.carrinho {
     background-color: red;
     border-radius: 100%;
     padding: 0;
     font-size: 12px;
     box-shadow: 2 2 1 black;
-    
-    
+    display: none;
 }
-#logo{
+
+/*.carrinho:after {
+    content: "0";
+}*/
+
+#logo {
     position: fixed;
     z-index: 1;
-    top:14%;
+    top: 14%;
     left: 42%;
 }
 
-#contatos{
-    
+#contatos {
     position: absolute;
     color: white;
     font-size: 16px;
@@ -103,8 +119,7 @@ body {
     top: 14%;
 }
 
-#btMenu{
+#btMenu {
     color: #FFF;
     opacity: 0.9.1;
 }
-

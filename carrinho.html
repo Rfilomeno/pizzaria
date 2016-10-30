@@ -1,0 +1,110 @@
+<!-- Definição do html5 -->
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta content="pizzaria">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quem-somos.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <script src="js/index.js"></script>
+    
+    <title>La Bella</title>
+    <link rel="icon" href="img/favicon.png">
+</head>
+
+<body background="img/pizza1080.jpg" onload="checkCookie()">
+    <!-- Cabeçalho da pagina contendo o menu, o login e o carrinho -->
+    <div id="header">
+        <ul id="menu">
+            <li id="login" class="login" onclick="openNavLogin()">
+                Login
+            </li>
+            <li id="carrinho" class="login" onclick="openNavCarrinho()">
+                <a href="#"><img src="img/carrinho.png"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Menu -->
+    <span id="btMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" target="_parent">Home</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="promocoes.html">Promoções</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a href="#">Carrinho</a>
+    </div>
+    <!-- Login -->
+    <div id="mySidenav2" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavLogin()">&times;</a>
+        <a>Usuário</a>
+        <input class="inputLogin" type="text" placeholder="Seu e-mail">
+        <a>Senha</a>
+        <input class="inputLogin" type="password" placeholder="senha">
+        <br/>
+        <br/>
+        <button id="btEntrar" onclick="emManutencao();">Entrar</button>
+        <a id="recuperarSenha">Recuperar senha</a>
+    </div>
+    <!-- Logo da Pizzaria -->
+    <div id="logo">
+        <img src="img/logofinal.png" width="50%" height="none">
+    </div>
+    <!-- Conteúdo do quem somos -->
+    <div id="quemSomos">
+        <h2 id="titulo">Carrinho</h2>
+           <form action="#">
+              <select name="pizzas" id="pizzas">
+                <option value="1">Pepperoni R$ 20,00</option>
+                <option value="2" >Calabresa acebolada R$ 18,50</option>
+                <option value="3"  >Calabresa especial R$ 20,00</option>
+                <option value="4"  >Chocolate com morango R$ 20,00</option>
+                <option value="5">Romeu e Julieta R$ 18,50</option>
+                <option value="6">Brigadeiro R$ 18,50</option>
+                <option value="7">Combo1 R$ 28,50</option>
+                <option value="8">Combo2 R$ 28,50</option>
+                <option value="9">Combo3 R$ 28,50</option>
+              </select>
+              <button id="adicionar-pizza">Adicionar</button>
+            </form>
+            <table id="tablePizzas">
+                <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Excluir</th>
+                </tr>   
+                             
+            </table>
+            <span id="spanTotal"><span>Total: R$ </span><span id="total">0.00</span><button id="finalizarCompra" onclick="emManutencao();">Finalizar Compra</button></span>
+    </div>
+    <!-- rodapé da pagina com dados de contato e link para redes sociais -->
+    <footer id="footer">
+        <ul id="ulRedes">
+            <li id="contatos">
+                <b>Rua: Almirante Barroso - 258 / CEP: 24458-456 </b>
+                <br />
+                <b>Telefone: (21) 1234-5678</b>
+                <br />
+                <b>Email: maint@maint.com</b>
+            </li>
+            <li class="redes">
+                <a href="#"><img src="img/face.png"></a>
+            </li>
+            <li class="redes">
+                <a href="#"><img src="img/twitter.png"></a>
+            </li>
+            <li class="redes">
+                <!-- Easter egg para resetar o carrinho de compras -->
+                <a href="#" onclick="resetCart();"><img src="img/instagram.jpg" width="80%" height="none"></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/carrinho.js"></script>
+    <!-- fim da página -->
+</body>
+
+</html>

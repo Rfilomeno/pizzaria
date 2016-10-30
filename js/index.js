@@ -24,3 +24,15 @@ function closeNavCadastro() {
     document.getElementById("mySidenav3").style.width = "0";
     document.getElementById("logo").style.width = "";
 }
+function openNavCarrinho() {
+    document.getElementById("mySidenavCarrinho").style.width = "350px";
+    
+}
+
+function closeNavCarrinho() {
+    document.getElementById("mySidenavCarrinho").style.width = "0";
+    
+}
+function emManutencao(){
+    alert ("Estamos em manutenção.");
+}
